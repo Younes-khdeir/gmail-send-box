@@ -1,0 +1,218 @@
+html>body{
+	background-color:white;
+}
+
+body .chat{
+	width:37%;
+	height:72%;
+	position:fixed;
+	bottom:0px;
+	right:5%;
+	box-shadow: 0px 0px 9px 1px rgb(226, 226, 226);
+	border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+
+}
+
+div.chat div.header {
+	background-color: rgb(64, 64, 64);
+	position:absolute;
+	width:100%;
+	border-radius:13px;
+}
+
+ul.menu{
+	list-style-type: none;
+	float:right;
+	margin-right:15px;
+	margin-top:8px;
+}
+
+ul.menu li{
+	float:left;	
+	margin-left:15px;
+}
+
+li a i {
+	color:rgb(179, 179, 179);
+}
+
+ul.menu li a{
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	padding:2px;
+}
+
+.header h4{
+	float:left;
+	color:white;
+	margin-left:20px;
+	margin-top:10px;
+	font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+ul.menu li a:hover{
+	background-color:rgb(89, 89, 89);
+}
+
+.inherit{
+	position:absolute;
+	width:100%;
+	box-sizing:border-box;
+	border:none;	
+}
+div.chat div.body{
+	top:37px;
+	bottom:0px;
+}
+.body textarea{
+	padding:8px;
+	font-size:15px;
+	padding-left:20px;
+	font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+	color:;
+	resize:none;
+}
+
+.body textarea:focus{
+	outline:none;
+}
+
+div.chat div.body div.to{
+	top:0px;
+}
+
+div.chat div.body div.subject{
+	top:36px;
+}
+div.chat div.body div.letter{
+	top:72px;
+	bottom:60px;
+}
+div.chat div.body div.letter div.edit{
+		position:absolute;
+		right:15px;
+		bottom:6px;
+}
+
+div.body div.letter div.edit i{
+	background-color: #15c39a;/*rgb(20, 195, 154);*/
+    color: white;
+    padding: 10px;
+    border-radius: 50%;	
+}
+
+div.chat div.body div.letter textarea{
+	top:0px;
+	bottom:0px;
+}
+div.chat div.body div.footer{
+	background-color:white;
+	bottom:0px;
+}
+
+div.body hr.border{
+	position: absolute;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    box-sizing: border-box;
+    top: 26px;
+    border: none;
+    box-shadow: 0px 2px 0px 1px #edeef6;
+}
+
+/*    */
+
+div.body div.footer ul.menu{
+	float:left;
+	padding-left:0px;
+	padding-right:12px;
+	width:100%;
+	box-sizing:border-box;
+	
+} 
+
+div.body div.footer ul.menu .right{
+	float:right;
+}
+
+.styleSend{
+	background-color: #1a73e8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    height: 36px;
+    border: none;
+}
+
+div.footer ul.menu li button.send{
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+div.footer ul.menu li button.dropicon{
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    padding: 5px;
+    border-left: 1px solid #185abc;
+	color:white;
+}
+div.footer ul li.dropup i{
+	color:white;
+}
+div.footer ul li i{
+	color:#737373;
+	/*#444;*/
+}
+
+div.footer ul li.icon1{
+	margin-left:30px;
+}
+div.footer ul.menu li a{
+	margin: 7px 0px;
+}
+
+.menu a:hover {
+  background-color: rgb(165, 165, 165); /*rgb(241, 243, 244);*/
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 1px 3px 11px 3px rgba(0,0,0,0.2);
+  top:-33px;
+}
+
+
+ul.menu .dropup:hover .content {
+	display: block;
+}
+
+div.footer ul.menu li.dropup div.content a{
+	margin: 3px 0;
+	float: none;
+	color: black;
+	padding: 10px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/*
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+div.body div.subject hr.limit{
+	top:30px;	
+}
+
+
+
+*/
