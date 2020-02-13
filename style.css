@@ -11,7 +11,7 @@ body .chat{
 	box-shadow: 0px 0px 9px 1px rgb(226, 226, 226);
 	border-top-right-radius: 13px;
     border-top-left-radius: 13px;
-
+	min-width: 500px;
 }
 
 div.chat div.header {
@@ -19,6 +19,28 @@ div.chat div.header {
 	position:absolute;
 	width:100%;
 	border-radius:13px;
+}
+
+div.chat div.header ul div.title{
+	display: none;
+    position: relative;
+}
+
+div.chat div.header ul li:hover div.title{
+	display: block;
+}
+
+div.chat div.header ul div.title p{
+	color: white;
+    position: absolute;
+    padding: 4px 10px;
+    z-index: 6;
+    box-sizing: border-box;
+    width: max-content;
+    top: -7px;
+    left: -30px;
+    background-color: rgb(80,83,86);
+    border-radius: 6px;
 }
 
 ul.menu{
@@ -55,6 +77,11 @@ ul.menu li a{
 ul.menu li a:hover{
 	background-color:rgb(89, 89, 89);
 }
+
+ul.menu li a:hover i{
+	color:white;
+}
+
 
 .inherit{
 	position:absolute;
@@ -123,18 +150,22 @@ div.body hr.border{
     box-shadow: 0px 2px 0px 1px #edeef6;
 }
 
-/*    */
+div.body div.footer div.left{
+    float: left;
+    position: relative;
+    margin-left: 15px;
+}
 
 div.body div.footer ul.menu{
-	float:left;
 	padding-left:0px;
-	padding-right:12px;
-	width:100%;
 	box-sizing:border-box;
-	
+	margin-top: 5px;
 } 
+div.body div.footer ul.menu a{
+	padding:5px;
+}
 
-div.body div.footer ul.menu .right{
+div.body div.footer div.right{
 	float:right;
 }
 
@@ -147,12 +178,16 @@ div.body div.footer ul.menu .right{
     height: 36px;
     border: none;
 }
+div.footer div.left div.dropup{
+	float: left;
+	margin-right:15px;
+}
 
-div.footer ul.menu li button.send{
+div.footer div.left div.dropup button.send{
 	border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-div.footer ul.menu li button.dropicon{
+div.footer div.left div.dropup button.dropicon{
 	border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: absolute;
@@ -160,40 +195,40 @@ div.footer ul.menu li button.dropicon{
     border-left: 1px solid #185abc;
 	color:white;
 }
-div.footer ul li.dropup i{
+div.footer div.left div.dropup i{
 	color:white;
 }
 div.footer ul li i{
 	color:#737373;
 	/*#444;*/
 }
-
-div.footer ul li.icon1{
-	margin-left:30px;
-}
+/*
 div.footer ul.menu li a{
 	margin: 7px 0px;
 }
-
-.menu a:hover {
-  background-color: rgb(165, 165, 165); /*rgb(241, 243, 244);*/
+*/
+.body .menu a:hover {
+    background-color: rgb(228, 228, 228); /*rgb(241, 243, 244);*/
+}
+.body .menu a:hover i {
+	color:black;
 }
 
-.content {
+.dropup .content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 150px;
   box-shadow: 1px 3px 11px 3px rgba(0,0,0,0.2);
-  top:-33px;
+  top:-45px;
 }
 
 
-ul.menu .dropup:hover .content {
+div.left div.droupup button.dropicon:hover .content {
 	display: block;
 }
 
-div.footer ul.menu li.dropup div.content a{
+div.footer div.left div.dropup div.content a{
 	margin: 3px 0;
 	float: none;
 	color: black;
@@ -202,6 +237,40 @@ div.footer ul.menu li.dropup div.content a{
 	display: block;
 	text-align: left;
 }
+
+div.chat div.footer div.title{
+	display: none;
+    position: relative;
+}
+
+div.chat div.footer ul li:hover div.title{
+	display: block;
+}
+
+
+div.chat div.footer button:hover+ div.title{
+	display: inline;
+    top: 23px;
+    left: -39px;
+}
+
+div.chat div.footer div.dropup button:hover  {
+	box-shadow: 0px 0px 2px 0px rgb(41,123,230);
+}
+
+div.chat div.footer div.title p{
+	color: white;
+    position: absolute;
+    padding: 4px 10px;
+    z-index: 6;
+    box-sizing: border-box;
+    width: max-content;
+    top: -75px;
+    left: -50px;
+    background-color: rgb(80,83,86);
+    border-radius: 6px;
+}
+
 
 /*
 .dropdown {
